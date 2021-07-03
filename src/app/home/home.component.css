@@ -1,0 +1,45 @@
+
+@import "~font-awesome/css/font-awesome.min.css";   
+ul li{
+    background: red;
+    cursor: pointer;
+    padding:10px 15px;
+    border-radius: 12px
+}
+
+
+.inputIcon
+{
+    position: relative;
+}
+.inputIcon input
+{
+    padding-left:45px ;
+    border:1px solid #aaa;
+    outline: none; 
+}
+
+.inputIcon input:focus
+{
+    border-color: #37DC94;
+    box-shadow: 0 0 10px #37DC94;
+}
+.inputIcon img
+{
+    position: absolute;
+    left: 5px;
+    top:3px;
+}
+.main a
+{
+    text-decoration: none;
+    color:#222 
+}
+.main a:active
+{
+    color:#37DC94
+}
+
+
+
+

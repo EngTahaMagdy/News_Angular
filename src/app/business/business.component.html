@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+
+    <div *ngFor="let a of allNews" class=" col-lg-4">
+      <a [href]='a.url'>  
+      <h1>{{a.title}}</h1>
+      <img [src]='a.urlToImage' class="img-fluid" width="400" height="400">
+      <p>{{a.description}}</p>
+    
+    </a>
+    </div>
+  </div>
+
+
+
+</div>

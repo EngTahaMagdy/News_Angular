@@ -1,0 +1,53 @@
+
+
+
+<div class="container" style="margin-bottom:65px">
+
+  <div class="inputIcon">
+    <input type="text" class="form-control my-5" placeholder="Search...."  [(ngModel)]='itemSearch' >
+    <img src="./assets/searchIcon.png"  class="img-fluid" width="30px" height="30px">
+  </div>
+
+
+
+
+<!--
+    <ul class="list-unstyled list-inline">
+        <li *ngFor="let c of countriesHome"  class="list-inline-item" (click)="getCountry(c)">{{c}}</li>
+        
+    </ul>
+        
+-->    
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row">
+
+
+
+
+
+
+    <div *ngFor="let a of allNews|search:itemSearch; let i = index" class=" col-lg-6 col-md-6 main">
+   <a [href]='a.url'>  
+     <div > <!--(click)='artNum(i)'-->
+      <h1>{{a.title}}</h1>
+      <img [src]='a.urlToImage' class="img-fluid" width="600" height="400">
+      <p>{{a.description}}</p>
+    </div>
+   </a> 
+    </div>
+  </div>
+
+
+
+</div>

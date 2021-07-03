@@ -1,0 +1,20 @@
+<div class="container my-5">
+<i class="fab fa-facebook fa-5xl"></i>
+<div class="tt"></div>
+
+
+  <div class="row">
+
+    <div *ngFor="let a of allNews" class=" col-lg-4">
+      <a [href]='a.url'>
+      <h1>{{a.title}}</h1>
+      <img [src]='a.urlToImage' class="img-fluid" width="400" height="400">
+      <p>{{a.description}}</p>
+
+          </a>
+    </div>
+  </div>
+
+
+
+</div>
